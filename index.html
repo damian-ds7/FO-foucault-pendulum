@@ -35,7 +35,7 @@
 
         label {
             display: inline-block;
-            width: 200px;
+            width: 250px;
             font-weight: bold;
         }
 
@@ -92,8 +92,8 @@
     <div class="controls">
         <div class="control-group">
             <label>Szerokość geograficzna:</label>
-            <input type="range" id="latitude" min="0" max="90" value="50" step="1" autocomplete="off">
-            <span class="value-display" id="latitude-val">50°</span>
+            <input type="range" id="latitude" min="0" max="90" value="60" step="1" autocomplete="off">
+            <span class="value-display" id="latitude-val">60°</span>
         </div>
 
         <div class="control-group">
@@ -109,9 +109,9 @@
         </div>
 
         <div class="control-group">
-            <label>Prędkość symulacji:</label>
-            <input type="range" id="speed" min="1" max="100" value="20" step="1" autocomplete="off">
-            <span class="value-display" id="speed-val">20x</span>
+            <label>Okres ruchu obrotowego Ziemii:</label>
+            <input type="range" id="period" min="1" max="60" value="6" step="1" autocomplete="off">
+            <span class="value-display" id="period-val">6 min</span>
         </div>
 
         <div class="control-group">
@@ -121,8 +121,14 @@
         </div>
 
         <div class="control-group">
-            <button onclick="resetPendulum()">Reset Symulacji</button>
-            <button onclick="clearTrace()">Wyczyść Ślad</button>
+            <label>Prędkość animacji:</label>
+            <input type="range" id="speed" min="1" max="20" value="1" step="1" autocomplete="off">
+            <span class="value-display" id="speed-val">1x</span>
+        </div>
+
+        <div class="control-group">
+            <button onclick="resetPendulum()">Reset symulacji</button>
+            <button onclick="clearTrace()">Wyczyść ślad</button>
             <button onclick="togglePause()">Pauza/Start</button>
         </div>
     </div>
