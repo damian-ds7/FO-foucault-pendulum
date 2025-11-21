@@ -4,7 +4,6 @@ let latitude = 60;
 let pendulumLength = 50;
 let initialAmplitude = 100;
 let earthPeriod = 6;
-let damping = 0.005;
 let speed = 1;
 
 let g = 9.81;
@@ -189,12 +188,6 @@ function setupControls() {
     select("#amplitude").input(function() {
         initialAmplitude = this.value();
         select("#amplitude-val").html(initialAmplitude);
-    });
-
-    select("#damping").input(function() {
-        let dampVal = this.value();
-        damping = dampVal / 1000;
-        select("#damping-val").html(damping.toFixed(3));
     });
 
     select("#period").input(function() {
