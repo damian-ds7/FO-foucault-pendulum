@@ -41,9 +41,3 @@ Po uruchomieniu dostępne są następujące kontrolki:
 - **Amplituda początkowa** – wychylenie początkowe masy wahadła
 - **Okres ruchu obrotowego Ziemi** – w symulacji skrócony dla lepszej wizualizacji efektu rotacji
 - **Prędkość animacji** – przyspieszenie symulacji (1x-20x)
-
-Przyciski sterujące:
-
-- **Reset symulacji** – przywraca stan początkowy z aktualnymi parametrami
-- **Wyczyść ślad** – usuwa narysowaną trajektorię
-- **Pauza/Start** – wstrzymuje/wznawia symulację
